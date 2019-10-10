@@ -1,16 +1,12 @@
 <?php
 require_once dirname(__DIR__) .'/vendor/autoload.php';
 
-$date_start = new \DateTime('2019-01-01');
-$date_end = new \DateTime('2019-12-31');
+$date_start = new \DateTime('2019-10-01');
+$date_end = new \DateTime('2019-10-4');
        
 $wc = new WC\WeightController(new WC\User(1));
 $avg_data = $wc->getAvgWeightВetweenDates(
-        $date_start, 
-        $date_end, 
-        WC\WeightController::BYWEEK
+        WC\WeightController::BYMONTH
         );
 
-echo "<pre>";
-var_dump($avg_data);
-echo "</pre>";
+echo($avg_data);
