@@ -29,7 +29,8 @@ class DBconnect
         { 
             if(!isset(self::$instance)){
                 try {
-                    $pdo = new \PDO('mysql:host=localhost;dbname=wc;charset=utf8', 'root', '');
+                    $config = include 'config/config.php';
+                    $pdo = new \PDO("mysql:host={$config['host']};dbname={$config['dbname']};charset=utf8", "{$config['login']}", "{$config['password']}");
                     self::$instance = new Query($pdo);    
                 } catch (\PDOException $exc) {
                     $logger = new Logger('Logger');
