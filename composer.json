@@ -1,0 +1,18 @@
+{
+    "name": "kosolapov/wc",
+    "description": "this module allows to convert info from database to JSON data",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Kosolapov Roman",
+            "email": "kosolapov-r@bk.ru"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.25",
+        "envms/fluentpdo": "^2.1.0"
+    },
+    "autoload": {
+        "psr-4": {"WC\\": "app/src/"}
+    }
+}
