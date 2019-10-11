@@ -60,7 +60,6 @@ class WeightController
     {
         $average_weight = [];
         
-        
         if($date_start === null){
             //behavior when there is no parameter
             $this->date_start = new \DateTime('1900-01-01');

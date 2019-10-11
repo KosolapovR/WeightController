@@ -1,7 +1,9 @@
 <?php
 
 namespace WC;
+
 require_once dirname(dirname(__DIR__)) .'/vendor/autoload.php';
+
 /**
  * This class as entity for table users in database
  */
