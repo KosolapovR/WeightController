@@ -1,7 +1,8 @@
 # WeightController
   WeightController is a library that allows you to use database data and convert them to JSON data. This library uses Monolog library for logging and FPDO library 
 as an abstract layer above the database
-  
+## Dependencies
+  WeightController requires PHP version 7.1 or greater and the Monolog 1.25, FPDO 2.1.0 libraries. It is assumed that you have at least 2 tables in the database: users and weight_data
 ## Installation
   To use this you need to download this library and install it in your project. Сlick on this link to download [WeightController](https://github.com/KosolapovR/WeightController.git)
   
