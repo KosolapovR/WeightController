@@ -40,7 +40,6 @@ class DBconnect
                 $logger = new Logger('Logger');
                 $logger->pushHandler(new StreamHandler(dirname(__DIR__).'/config/logs/errors.log', Logger::WARNING));
                 $logger->error('Connection DB error');
-                echo $exc->getTraceAsString();
                 die();
             }         
         }
